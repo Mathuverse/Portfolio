@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathusan Manoharan - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mathusan Manoharan</h1>
+        <p>514 – 945 – 3946 | <a href="mailto:Mathusan54@gmail.com">Mathusan54@gmail.com</a> | 5575 Avenue Victoria Montréal</p>
+    </header>
+    <main>
+        <section id="education">
+            <h2>Éducation</h2>
+            <ul>
+                <li>
+                    <div class="degree">Baccalauréat en génie logiciel</div>
+                    <div class="institution">École de technologie supérieure (ÉTS), Montréal</div>
+                    <div class="year">Depuis 2022</div>
+                </li>
+                <li>
+                    <div class="degree">Cheminement universitaire en technologie, Spécialisation: Informatique (LOG)</div>
+                    <div class="institution">École de technologie supérieure (ÉTS), Montréal</div>
+                    <div class="year">2022</div>
+                </li>
+                <li>
+                    <div class="degree">Diplôme d’études collégiales en science de la nature</div>
+                    <div class="institution">Collège de Maisonneuve, Montréal</div>
+                    <div class="year">2021</div>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="projects">
+            <h2>Projets</h2>
+            <!-- Example Project -->
+            <div class="project">
+                <h3>Conception d’une grue miniature télécommandée</h3>
+                <p>•Programmer des microcontrôleurs •Étudier les composants électroniques •Réalisation des circuits électroniques •Tests et mise à l'essai du matériel et du logiciel.</p>
+                <span class="year">2022</span>
+            </div>
+            <div class="project">
+                <h3>Conception du Pendule de Foucault</h3>
+                <p>•Recherche et analyse par rapport à la conception du pendule.
+                    • Préparer du budget, les fiches techniques et les objectifs a court termes.
+                    • Coder le programme du microcontrôleur Arduino.
+                    • Analyse de différents matériels lors du test du pendule de Foucault.
+                    • Rédiger et présenter le projet final.</p>
+                <span class="year">2021</span>
+            </div>
+            <!-- Add more projects here -->
+        </section>
+        <section id="skills">
+            <h2>Connaissances</h2>
+            <div class="skill">
+                <div class="skill-name">HTML / CSS</div>
+                <div class="skill-bar"><div class="skill-per" per="90%" style="max-width: 90%;"></div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Java</div>
+                <div class="skill-bar"><div class="skill-per" per="80%" style="max-width: 80%;"></div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">JavaScript/TypeScript</div>
+                <div class="skill-bar"><div class="skill-per" per="75%" style="max-width: 75%;"></div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Node.js / Express / BootStrap</div>
+                <div class="skill-bar"><div class="skill-per" per="70%" style="max-width: 70%;"></div></div>
+            </div>
+            
+            <div class="skill">
+                <div class="skill-name">jQuery</div>
+                <div class="skill-bar"><div class="skill-per" per="60%" style="max-width: 60%;"></div></div>
+            </div>
+            
+            <div class="skill">
+                <div class="skill-name">Language C</div>
+                <div class="skill-bar"><div class="skill-per" per="50%" style="max-width: 50%;"></div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">SQL</div>
+                <div class="skill-bar"><div class="skill-per" per="30%" style="max-width: 30%;"></div></div>
+            </div>
+
+        </section>
+        
+        <section id="experience">
+            <h2>Expérience de travail</h2>
+            <div class="job">
+                <h3>Support Technique, Transport Canada, Dorval</h3>
+                <ul>
+                    <li>- Remplacer des périphériques</li>
+                    <li>- Résoudre divers problèmes</li>
+                    <li>- Monter configurer et mettre à jour des téléphones intelligents et des ordinateurs.</li>
+                </ul>
+                <span class="year">Depuis 2023</span>
+            </div>
+            <div class="job">
+                <h3>Associé de vente / Assistance technique
+                    , La Source, Montréal</h3>
+                <ul>
+                    <li>- Présenter les spécifications et les fonctionnalités des produits</li>
+                    <li>- Utiliser les systèmes et les outils informatiques pour suivre les stocks, les commandes et les ventes</li>
+                    <li>- Configurer et mettre à jour des téléphones intelligents et des ordinateurs</li>
+                </ul>
+                <span class="year">Depuis 2022</span>
+            </div>
+            <div class="job">
+                <h3>Service à la clientèle en ligne
+                    , Holt Renfrew, Montréal</h3>
+                <ul>
+                    <li>- Faire des rapports sur les enquêtes des clients</li>
+                    <li>- Résoudre les demandes des clients</li>
+                    <li>- Placer des commandes en ligne</li>
+                </ul>
+                <span class="year">2020 - 2021</span>
+            </div>
+            
+            <!-- Add more experiences here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mathusan Manoharan. CV.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.skill-per').each(function(){
+            var $this = $(this);
+            var per = $this.attr('per');
+            $this.css("width",per);
+        });
+    });
+</script>
+
+</body>
+</html>
